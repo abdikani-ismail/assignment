@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: greenyellow;
+      }
+
+      .container {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        justify-content: center;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      form {
+        border: 1px solid black;
+        border-radius: 30px;
+        padding: 25px;
+        background-color: rgb(218, 220, 221);
+      }
+      .country input {
+        display: block;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      .detail {
+        font-weight: normal;
+        font-size: medium;
+        display: block;
+        color: black;
+        font-size: medium;
+        justify-content: center;
+      }
+      input {
+        padding: 10px;
+        border-radius: 10px;
+      }
+      select {
+        padding: 10px;
+        border-radius: 10px;
+      }
+      h1 {
+        font-size: larger;
+        font-weight: bold;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        color: white;
+      }
+      #button input {
+        background-color: blue;
+        color: white;
+        padding: 10px;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        margin: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Registration Form</h1>
+      <form action="#">
+        <div class="input-box">
+          <span class="detail">Full Name:</span>
+          <input type="text" placeholder="Enter your name" required />
+        </div>
+
+        <div class="input-box">
+          <span class="detail">Email:</span>
+          <input type="text" placeholder="Enter your Email" required />
+        </div>
+        <div class="input-box">
+          <span class="detail">Passward:</span>
+          <input type="password" placeholder="Enter your password" required />
+        </div>
+        <div class="input-box">
+          <span class="detail">confirm password : </span>
+          <input
+            type="password"
+            placeholder="Enter your confirm password"
+            required />
+        </div>
+        <div class="input-box">
+          <span class="detail">Username:</span>
+          <input type="text" placeholder="Enter your username" required />
+        </div>
+
+        <div class="input-box">
+          <span class="detail">phone Number:</span>
+          <input type="text" placeholder="Enter your name" required />
+        </div>
+
+        <div class="gender">
+          <span class="gender">Gender</span>
+          <input type="radio" name="gender" value="female" />
+          <span>Female</span>
+          <span><input type="radio" name="gender" value="male" />male</span>
+          <span
+            ><input
+              type="radio"
+              name="gender"
+              value="prefer not to say" />prefer not to say</span
+          >
+        </div>
+        <div class="address">
+          <label for="address">Address</label>
+          <input type="text" placeholder="Enter street address" />
+          <input type="text" placeholder="Enter address line 2" />
+        </div>
+        <select>
+          <option selected>Select country</option>
+          <option>Somalia</option>
+          <option>USA</option>
+          <option>UK</option>
+          <option>South africa</option>
+        </select>
+        <div class="country">
+          <input type="text" placeholder="Enter your city" />
+          <input type="text" placeholder="Enter your region" />
+          <input type="text" placeholder="Postal code" />
+        </div>
+        <div id="button"><input type="button" value="Submit" /></div>
+      </form>
+    </div>
+  </body>
+</html>
